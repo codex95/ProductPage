@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Product Landing Page</title>
+</head>
+<body>
+  <div class="nav-image">
+    <!--Page header-->
+    <header id="header">
+      <!--Product logo-->
+      <div class="logo">
+        <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="trombones logo" id="header-img" />
+      </div>
+      <!--Nav bar to navigate page-->
+      <nav id="nav-bar">
+         <ul>
+            <li><a class="nav-link" href="#features">Features</a></li>
+            <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+            <li><a class="nav-link" href="#pricing">Pricing</a></li>
+          </ul>
+      </nav>
+    </header>
+  </div>
+  <!--Email submission for customer to subscribe newsletter-->
+  <section id="info">
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input name="email" id="email" type="email" placeholder="Enter your email address" required/><input id="submit" type="submit" value="Get Started" class="button" />
+      </form>
+  <!--Sections to promote product's features, pricing, etc-->
+  </section>
+  <!--Product's features-->
+  <section id="features"></section>
+  <!--Video of how product works-->
+  <section id="how-it-works">
+     <iframe id="video" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" allowfullscreen></iframe>
+  </section>
+  <!--Product's pricing-->
+  <section id="pricing"></section>
+</body>
+</html>

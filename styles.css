@@ -1,0 +1,29 @@
+.nav-image {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  img {
+    position: relative;
+    width: 50%;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 50%; /*prevent overlap with image*/
+    width: 100%;
+  }
+  
+  @media (max-width: 600px) {
+    header {
+      flex-wrap: wrap;
+    }
+  }
+  
+  form, input {
+    position: relative;
+    width: 50%;
+  }
