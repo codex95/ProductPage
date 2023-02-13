@@ -1,29 +1,58 @@
-.nav-image {
-    display: flex;
-    flex-direction: column;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  /* Set font size for easy rem calculations */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #eee;
+  font-family: 'Lato', sans-serif;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
   }
-  
-  img {
-    position: relative;
-    width: 50%;
-  }
-  
-  nav {
+}
+
+/* nav and header start */
+.nav-image header {
     display: flex;
     flex-direction: row;
-    position: fixed;
-    top: 0;
-    left: 50%; /*prevent overlap with image*/
     width: 100%;
   }
   
-  @media (max-width: 600px) {
-    header {
-      flex-wrap: wrap;
-    }
+  img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
   }
   
-  form, input {
-    position: relative;
-    width: 50%;
+  nav {
+    padding-top: 2.5rem;
+    width: 100%;
+    font-size: 1.6rem;
   }
+
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns:  200px 200px 200px;
+    gap: 1rem;
+    justify-content: right;
+    text-align: center;
+  }
+  /* nav and header end */
+  
